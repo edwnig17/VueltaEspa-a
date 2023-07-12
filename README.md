@@ -1,6 +1,8 @@
 # Nombre del Proyecto
 
-Breve descripción o introducción de tu proyecto.
+Un crack cd :)
+
+no funshion el etapas y el equipos
 
 ## Estructura de carpetas
 
@@ -78,4 +80,184 @@ Si deseas contribuir a este proyecto, sigue estos pasos:
 Si tienes alguna pregunta o consulta, no dudes en ponerte en contacto conmigo a través de [edwingstiven20@gmail.com].
 
 
+
+
+db.createCollection("equipos")
+
+db.equipos.insertMany([
+  {
+    numeroEquipo: 1,
+    nombre: "madrid",
+    pais: "España",
+    director: "Edwing",
+    descripcion: "El mejor equipo",
+    ubicacion: "Colimbia",
+    patrocinador: "Isa",
+    estadio: "Alfonso"
+  },
+  {
+    numeroEquipo: 2,
+    nombre: "Psg",
+    pais: "Francia",
+    director: "Sergio",
+    descripcion: "Los mejores",
+    ubicacion: "lejos ",
+    patrocinador: "Juan",
+    estadio: "Alegria"
+  },
+  {
+    numeroEquipo: 3,
+    nombre: "Juventus",
+    pais: "Italia",
+    director: "Vermen",
+    descripcion: "Ser lo mejores",
+    ubicacion: "cerca ",
+    patrocinador: "Alej",
+    estadio: "yope",
+  },
+  {
+    numeroEquipo: 4,
+    nombre: "",
+    pais: "Alemania",
+    director: "Fiorentino",
+    descripcion: "Los mejores",
+    fundacion: "ellap",
+    patrocinador: "Raúl",
+    estadio: "Col"
+  }
+])
+
+db.createCollection("ciclistas")
+
+db.ciclistas.insertMany([
+  {
+    numeroCiclista: 1,
+    nombreCiclista: "Juan",
+    equipo: "Juven",
+    nacionalidad: "Col",
+    edad: 25,
+  },
+  {
+    numeroCiclista: 2,
+    nombreCiclista: "Isa",
+    equipo: "Junior",
+    nacionalidad: "Ven",
+    edad: 28,
+  },
+  {
+    numeroCiclista: 3,
+    nombreCiclista: "Camilo",
+    equipo: "Campus",
+    nacionalidad: "Ven",
+    edad: 30,
+  },
+  {
+    numeroCiclista: 4,
+    nombreCiclista: "Sergio",
+    equipo: "alegria",
+    nacionalidad: "Col",
+    edad: 27,
+
+  },
+  {
+    numeroCiclista: 5,
+    nombreCiclista: "Edwing",
+    equipo: "Alegre",
+    nacionalidad: "Col",
+    edad: 32,
+  
+  }
+])
+
+db.createCollection("premios")
+
+db.premios.insertMany([
+  {
+    nombre: "1 millon",
+    descripcion: "Para los gastos",
+    ganador: "Edwing",
+
+  },
+  {
+    nombre: "800 mil",
+    descripcion: "En bonos",
+    ganador: "Sergio",
+  
+  },
+  {
+    nombre: "Un celular",
+    descripcion: "Para uso personal",
+    ganador: "Isa",
+    
+  },
+  {
+    nombre: "200 mil",
+    descripcion: "Premio en dinero",
+    ganador: "Raul",
+   
+  },
+  {
+    nombre: "100 mil ",
+    descripcion: "Bonos para comer",
+    ganador: "camila",
+  
+  }
+])
+
+db.createCollection("etapas")
+
+
+
+db.etapas.insertMany([
+  {
+    numeroEtapa: 1,
+    fecha: new Date("2023-07-01"),
+    salida: "Madrid",
+    llegada: "Sevilla",
+    distancia: "100 kilómetros",
+    ganador: "Chris Froome",
+    descripcion: "Etapa llana con algunos repechos",
+    premioMontana: "Monte Abantos"
+  },
+  {
+    numeroEtapa: 2,
+    fecha: new Date("2023-07-02"),
+    salida: "Sevilla",
+    llegada: "Granada",
+    distancia: "180 kilómetros",
+    ganador: "Alejandro Valverde",
+    descripcion: "Etapa de montaña con final en alto",
+    premioMontana: "Sierra Nevada"
+  },
+  {
+    numeroEtapa: 3,
+    fecha: new Date("2023-07-03"),
+    salida: "Granada",
+    llegada: "Málaga",
+    distancia: "150 kilómetros",
+    ganador: "Peter Sagan",
+    descripcion: "Etapa mixta con tramos de montaña y llanos",
+    premioMontana: "Alto de El Torcal"
+  },
+  {
+    numeroEtapa: 4,
+    fecha: new Date("2023-07-04"),
+    salida: "Málaga",
+    llegada: "Córdoba",
+    distancia: "200 kilómetros",
+    ganador: "Egan Bernal",
+    descripcion: "Etapa de montaña con final en ascenso exigente",
+    premioMontana: "Alto de La Covatilla"
+  },
+  {
+    numeroEtapa: 5,
+    fecha: new Date("2023-07-05"),
+    salida: "Córdoba",
+    llegada: "Sevilla",
+    distancia: "120 kilómetros",
+    ganador: "Mark Cavendish",
+    descripcion: "Etapa llana y rápida para los sprinters",
+    premioMontana: "No hay premios de montaña en esta etapa"
+  }
+])
 
